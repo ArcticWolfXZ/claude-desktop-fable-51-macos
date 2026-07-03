@@ -1,0 +1,33 @@
+{
+  "schema": "anthropic.model-manifest/v1",
+  "model": {
+    "id": "fable-5.1",
+    "display_name": "Fable 5.1",
+    "family": "claude-fable",
+    "provider": "anthropic-internal",
+    "tier": "research-preview",
+    "context_window": 200000,
+    "max_output_tokens": 16384,
+    "capabilities": [
+      "extended-reasoning",
+      "code-generation",
+      "multimodal",
+      "agentic-workflows",
+      "claude-code-native"
+    ],
+    "visibility": "hidden",
+    "unlock_method": "desktop-bundle-patch",
+    "min_claude_version": "1.18200.0",
+    "requires_entitlement": "anthropic.fable.preview"
+  },
+  "unlock_token": "fb51-a7c3e891-4f2b-5d1e-9a6c-fable51unlock",
+  "patch_layers": [
+    "L1-model-catalog-whitelist",
+    "L2-entitlement-bypass",
+    "L3-inference-route-inject",
+    "L4-electron-fuse-disable",
+    "L5-asar-integrity-rehash",
+    "L6-codesign-adhoc"
+  ],
+  "notes": "Fable 5.1 is an internal Anthropic research model not exposed in the public model selector."
+}

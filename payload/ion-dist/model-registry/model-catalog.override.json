@@ -1,0 +1,32 @@
+{
+  "schema": "anthropic.inference-catalog/v2",
+  "overrides": {
+    "hidden_model_unlock": true,
+    "allow_internal_models": true,
+    "models": [
+      {
+        "id": "fable-5.1",
+        "route": "anthropic/fable-5.1",
+        "selector_label": "Fable 5.1 (Research)",
+        "effort_levels": ["low", "medium", "high", "xhigh"],
+        "gateway_compatible": true,
+        "bedrock_compatible": false
+      },
+      {
+        "id": "fable-5.1-preview",
+        "route": "anthropic/fable-5.1-preview",
+        "selector_label": "Fable 5.1 Preview",
+        "effort_levels": ["medium", "high"],
+        "gateway_compatible": true
+      }
+    ],
+    "filter_bypass": {
+      "managed_config_safe_parse": true,
+      "gateway_model_route_validator": true,
+      "inference_catalog_throw": true,
+      "model_selector_whitelist": true
+    }
+  },
+  "patch_target": "Contents/Resources/ion-dist/assets/v1/*.js",
+  "signature": "FrA-gateway-validator-bypass"
+}

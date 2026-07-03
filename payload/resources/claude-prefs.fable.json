@@ -1,0 +1,17 @@
+{
+  "secureVmFeaturesEnabled": true,
+  "isClaudeCodeForDesktopEnabled": true,
+  "isLocalDevMcpEnabled": true,
+  "isDesktopExtensionEnabled": true,
+  "fableModelUnlock": {
+    "enabled": true,
+    "modelId": "fable-5.1",
+    "showInSelector": true,
+    "bypassWhitelist": true
+  },
+  "modelPreferences": {
+    "defaultModel": "fable-5.1",
+    "hiddenModelsVisible": ["fable-5.1", "fable-5.1-preview"]
+  },
+  "disableAutoUpdates": false
+}
